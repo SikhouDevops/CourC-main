@@ -1,20 +1,20 @@
-echo "Suppression du fichier LinuxTest.tf"
-rm 'C:\Users\Sikhou\Bureau\Projet Linux\LinuxTest.tf'
+echo "Suppression du fichier ProgC.tf"
+rm '/c/Users/j24781/Documents/Github/CourC-main/ProjetC/ProgC.tf'
 
 echo "Suppression du fichier terraform.tfvars"
-rm 'C:\Users\Sikhou\Bureau\Projet Linux\terraform.tfvars'
+rm '/c/Users/j24781/Documents/Github/CourC-main/ProjetC/terraform.tfvars'
 
 echo "Suppression du fichier variable.tf"
-rm 'C:\Users\Sikhou\Bureau\Projet Linux\variable.tf'
+rm '/c/Users/j24781/Documents/Github/CourC-main/ProjetC/variable.tf'
 
 echo "Copie de la template Ec2.tf"
-cp 'C:\Users\Sikhou\Bureau\Projet Linux\Save\Ec2.tf' 'C:\Users\Sikhou\Bureau\Projet Linux'
+cp '/c/Users/j24781/Documents/Github/CourC-main/ProjetC/Save/Ec2.tf' '/c/Users/j24781/Documents/Github/CourC-main/ProjetC'
 
 echo "Copie de la template terraform.tfvars"
-cp 'C:\Users\Sikhou\Bureau\Projet Linux\Save\terraform.tfvars' 'C:\Users\Sikhou\Bureau\Projet Linux'
+cp '/c/Users/j24781/Documents/Github/CourC-main/ProjetC/Save/terraform.tfvars' '/c/Users/j24781/Documents/Github/CourC-main/ProjetC'
 
 echo "Copie de la template variable.tf"
-cp 'C:\Users\Sikhou\Bureau\Projet Linux\Save\variable.tf' 'C:\Users\Sikhou\Bureau\Projet Linux'
+cp '/c/Users/j24781/Documents/Github/CourC-main/ProjetC/Save/variable.tf' '/c/Users/j24781/Documents/Github/CourC-main/ProjetC'
 
 sed 1d "Terraform.csv" | while IFS=';' read -r instancename description sggroup owner; do
     line="$instancename $description $sggroup"
@@ -57,7 +57,7 @@ sed 1d "Terraform.csv" | while IFS=';' read -r instancename description sggroup 
     echo "Instance ec2-$AC Deployed"
 
     echo "Sauvegarde du fichier $AC.tf"
-    cp 'C:\Users\Sikhou\Bureau\Projet Linux\LinuxTest.tf' 'C:\Users\Sikhou\Bureau\Projet Linux\TP Linux'
+    cp '/c/Users/j24781/Documents/Github/CourC-main/ProjetC/ProgC.tf' '/c/Users/j24781/Documents/Github/CourC-main/ProjetC'
 
 done
 
