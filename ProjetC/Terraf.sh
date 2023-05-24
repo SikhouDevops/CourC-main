@@ -57,7 +57,7 @@ sed 1d "Terraform.csv" | while IFS=';' read -r instancename description sggroup 
     echo "Instance ec2-$AC Deployed"
 
     echo "Sauvegarde du fichier $AC.tf"
-    cp '/c/Users/j24781/Documents/Github/CourC-main/ProjetC/ProgC.tf' '/c/Users/j24781/Documents/Github/CourC-main/ProjetC'
+    cp '/c/Users/j24781/Documents/Github/CourC-main/ProjetC/ProgC.tf' '/c/Users/j24781/Documents/Github/CourC-main/ProjetC/Save'
 
 done
 
